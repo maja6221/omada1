@@ -1,12 +1,3 @@
----
-import Backdrop from "../komponenter/Backdrop.astro";
-import Carousel from "../komponenter/Carousel.astro";
-import Carousel1 from "../komponenter/Carousel1.astro";
-import Knapper from "../komponenter/Knapper.astro";
-import Footer from "../komponenter/Footer.astro";
-import Header from "../komponenter/Header.astro";
----
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -19,20 +10,24 @@ import Header from "../komponenter/Header.astro";
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet" />
     <title>Astro</title>
   </head>
-  <Header />
   <body>
-    <Backdrop />
-    <div>
-      <Knapper />
-    </div>
 
-    <Line />
-    <h2 class="deligoods">Deli Goods</h2>
+	<hr class="hr1" />
 
-    <Carousel1 />
-    <center>
-      <img class="deli" src="../src/images/deli.webp" alt="" />
-    </center>
+   
   </body>
-  <Footer />
 </html>
+
+
+<style>
+      .hr1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+    border: 0;
+    border-top: 1.5px solid  #e5604d;
+  }
+
+</style>

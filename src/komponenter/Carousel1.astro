@@ -17,24 +17,28 @@
           <section id="testimonial" class="max-width">
             <article class="testimonial-container" data-index="1">
               <img src="../src/images/produkt1.JPG" alt="" />
-              <p class="p_slide">hej 1</p>
+              <a class="p_slide" href=""><p class="p_slide">Gamay of the morning</p></a>
+              <p class="slide1"> € 13,00</p>
             </article>
             <article class="testimonial-container" data-index="2">
               <img src="../src/images/produkt2.JPG" alt="" />
-              <p class="p_slide">hej 2</p>
+              <a class="p_slide" href=""><p class="p_slide">Gamay of the morning</p></a>
+              <p class="slide1"> € 13,00</p>
             </article>
             <article class="testimonial-container" data-index="3">
               <img src="../src/images/produkt3.JPG" alt="" />
-              <p class="p_slide">Gamay of the morning</p>
-              <p> € 13,00</p>
+              <a class="p_slide" href=""><p class="p_slide">Gamay of the morning</p></a>
+              <p class="slide1"> € 13,00</p>
             </article>
             <article class="testimonial-container" data-index="4">
               <img src="../src/images/produkt4.JPG" alt="" />
-              <p class="p_slide">hej 4 </p>
+              <a class="p_slide" href=""><p class="p_slide">Gamay of the morning</p></a>
+              <p class="slide1"> € 13,00</p>
             </article>
             <article class="testimonial-container" data-index="5">
               <img src="../src/images/produkt5.JPG" alt="" />
-              <p class="p_slide">hej 5</p>
+              <a class="p_slide" href=""><p class="p_slide">Gamay of the morning</p></a>
+              <p class="slide1"> € 13,00</p>
             </article>
     
             <button class="carousel-btn previous">←</button>
@@ -112,7 +116,7 @@
     #testimonial {
       position: relative;
       padding-inline: 24px;
-      margin-block: 80px 150px;
+      margin-block: 1px 150px;
       height: 18.5rem;
       width: 75%;
     }
@@ -207,7 +211,7 @@
       opacity: 0;
       transition: background-color 0.3s, opacity 0.15s, transform 0.3s ease-in-out;
       z-index: 8;
-      top: 50%;
+      top: 40%;
       transform: translateY(-50%);
     }
   
@@ -239,6 +243,24 @@
   
     .testimonial-container > * {
       margin: 0;
+    }
+
+    .p_slide {
+        font-family: 'Montserrat', sans-serif;
+        color: #e5604d;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .p_slide:hover {
+        color: black;
+    }
+
+    .slide1 {
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-size: 13px;
+
     }
   </style>
   
