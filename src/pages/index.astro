@@ -3,6 +3,7 @@ import Backdrop from "../komponenter/Backdrop.astro";
 import Carousel from "../komponenter/Carousel.astro";
 import Carousel1 from "../komponenter/Carousel1.astro";
 import Knapper from "../komponenter/Knapper.astro";
+import Footer from "../komponenter/Footer.astro";
 ---
 
 <html lang="en">
@@ -11,22 +12,19 @@ import Knapper from "../komponenter/Knapper.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-	<link rel="stylesheet" href="../src/styles/mutual.css">
+    <link rel="stylesheet" href="../src/styles/mutual.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet" />
     <title>Astro</title>
   </head>
   <body>
-	<Backdrop />
+    <Backdrop />
     <div>
-      
       <Knapper />
     </div>
-    
 
     <Carousel1 />
   </body>
+  <Footer />
 </html>
-
-
