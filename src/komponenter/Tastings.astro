@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="../src/styles/mutual.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet" />
+    <title>Astro</title>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <div class="event">
+          <div class="img">
+            <img src="../src/images/glas.png" alt="" />
+          </div>
+          <div class="indhold">
+            <h2>Public Tastings</h2>
+            <p>Once a month you’re invited to join our open wine tasting and sample the curated selection of...</p>
+          </div>
+          <div class="knap1">
+            <button>Learn More</button>
+          </div>
+          <div class="knap2">
+            <button>Book Tasting</button>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="img">
+            <img src="../src/images/tasting.png" alt="" />
+          </div>
+          <div class="indhold">
+            <h2>Private Tastings</h2>
+            <p>Once a month you’re invited to join our open wine tasting and sample the curated selection of...</p>
+          </div>
+          <div class="knap1">
+            <button>Learn More</button>
+          </div>
+          <div class="knap2">
+            <button>Book Tasting</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  button {
+    border: solid #e5604d;
+    color: #e5604d;
+    background-color: #fffef3;
+    padding: 15px;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  button:hover {
+    color: #fffef3;
+    background-color: #e5604d;
+  }
+
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 15%;
+    border: solid 1px #e5604d;
+    padding: 20px;
+  }
+
+  .event {
+    padding-inline: 15%;
+
+    
+  }
+
+  @media (max-width: 600px) {
+    section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 0%;
+  }
+
+  .event {
+    padding-inline: 10%;
+  }
+
+  .knap2 {
+    padding-bottom: 15%;
+  }
+
+  img {
+    padding-top: 10%;
+  }
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    color:  #e5604d;;
+    font-size: 23px;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .knap1 {
+    padding-bottom: 7%;
+  }
+
+ 
+
+ 
+</style>
