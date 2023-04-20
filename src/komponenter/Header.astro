@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,4 +9,127 @@
   <body>
     <main></main>
   </body>
+</html> --><!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="../src/styles/mutual.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet" />
+    <title>Header</title>
+  </head>
+  <body>
+    <div class="logo">
+      <a class="omada_logo" href="https://omada.wine/">OMADA.WINE</a>
+    </div>
+    <header id="grid_menu">
+      <nav id="header-nav">
+        <ul id="menu">
+          <li class="wines">
+            <a href="" class="subnavbtn">WINES</a>
+          </li>
+          <li class="winemakers">
+            <a href="" class="subnavbtn">WINEMAKERS</a>
+          </li>
+          <li class="regions">
+            <a href="" class="subnavbtn">REGIONS</a>
+          </li>
+          <li class="subscription">
+            <a href="" class="subnavbtn">SUBSCRIPTION</a>
+          </li>
+          <li class="boxes">
+            <a href="" class="subnavbtn">BOXES</a>
+          </li>
+          <li class="social_club">
+            <a href="" class="subnavbtn">SOCIAL CLUB</a>
+          </li>
+          <li class="gift_card">
+            <a href="" class="subnavbtn">GIFT CARD</a>
+          </li>
+          <li class="deli">
+            <a href="" class="subnavbtn">DELI</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .omada_logo {
+    color: black;
+    font-size: 30px;
+    margin-left: 42%;
+  }
+
+  ul#menu li {
+    display: inline;
+  }
+
+  .logo {
+    padding-top: 36px;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 2rem;
+    padding: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  /* header nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    gap: 35px;
+    overflow-x: auto;
+  } */
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #1c2d37;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  a:hover {
+    color: #e5604d;
+  }
+
+  #menu {
+    font-family: aviano-sans, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-left: 8.7%;
+  }
+
+  #grid_menu {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* align-items: center; */
+  }
+</style>
