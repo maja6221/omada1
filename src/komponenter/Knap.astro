@@ -1,6 +1,3 @@
----
----
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,46 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet" />
     <title>Astro</title>
   </head>
+  
   <body>
-    
-    <div class="knap">
-      <button>Event Calendar</button>
-      <button>Tastings</button>
-      <button>Deli Goods</button>
-      <button>About</button>
+    <div>
+        <button>Begin test</button>
     </div>
   </body>
+ 
 </html>
 
+
 <style>
-  @media (max-width: 600px) {
-    .knap {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-
-  
-
-
-    }
-  }
-
   button {
     border: solid #e5604d;
     color: #e5604d;
     background-color: #fffef3;
     padding: 15px;
-    width: 50%;
+    width: 20%;
     background-color: none;
     display: flex;
     justify-content: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 11%;
   }
 
   .knap {
     gap: 30px;
     display: flex;
-    
     text-align: center;
     padding-inline: 30px;
     padding-top: 50px;
@@ -61,12 +45,16 @@
   a {
     text-decoration: none;
     color: #fffef3;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
   }
 
   button:hover {
     color: #fffef3;
     background-color: #e5604d;
+  }
+
+  div {
+    padding-top: 7%;
   }
 </style>

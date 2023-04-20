@@ -16,3 +16,17 @@
     padding-left: 11%;
 }
 
+.h2_test {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #e5604d;
+    padding-left: 11%;
+}
+
+.p_test {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 11%;
+}
+
