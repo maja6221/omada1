@@ -1,11 +1,3 @@
----
-import Backdrop from "../komponenter/Backdrop.astro";
-import Carousel from "../komponenter/Carousel.astro";
-import Carousel1 from "../komponenter/Carousel1.astro";
-import Knapper from "../komponenter/Knapper.astro";
-import Line from "../komponenter/Line.astro";
----
-
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -19,17 +11,23 @@ import Line from "../komponenter/Line.astro";
     <title>Astro</title>
   </head>
   <body>
-    <Backdrop />
-    <div>
-      <Knapper />
-    </div>
 
-	<Line />
-	<h2 class="deligoods">Deli Goods</h2>
+	<hr class="hr1" />
 
-    <Carousel1 />
-    <center>
-      <img class="deli" src="../src/images/deli.webp" alt="" />
-    </center>
+   
   </body>
 </html>
+
+
+<style>
+      .hr1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+    border: 0;
+    border-top: 1.5px solid  #e5604d;
+  }
+
+</style>
