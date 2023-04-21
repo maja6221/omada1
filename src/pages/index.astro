@@ -16,29 +16,13 @@ import Tastinginfo from "../komponenter/Tastinginfo.astro";
 import Delibillede from "../komponenter/Delibillede.astro";
 import Opening from "../komponenter/Opening.astro";
 import Testimonials from "../komponenter/Testimonials.astro";
-import Mainlayout from "../komponenter/Mainlayout.astro";
-import Form from "../komponenter/Form.astro";
+import Burgermenu from "../komponenter/Burgermenu.astro";
 
-const url = "https://kktyplinqgygnnagbsib.supabase.co/rest/v1/omada_testimonials?approved=is.true";
-const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrdHlwbGlucWd5Z25uYWdic2liIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg2MzY2MjcsImV4cCI6MTk5NDIxMjYyN30.eim5AhzEGy_kEp2s9c-TN-mL3YdGy2KBYYxO4DX58ds";
-
-const response = await fetch(url, {
-  method: "GET",
-  headers: {
-    apikey: key,
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-});
-
-const udsagn = await response.json();
-
-function getFirstNChars(str, length) {
-  return str.substring(0, length);
-}
+import "../styles/mutual.css";
 ---
 
 <Header />
+<Burgermenu />
 <Backdrop />
 <main>
   <div>
@@ -71,18 +55,7 @@ function getFirstNChars(str, length) {
   <Opening />
 
   <Line />
-  <Mainlayout title="Reviews">
-    <main>
-      <Form />
-      <ul>
-        {
-          udsagn.map((testimonial) => {
-            return <Testimonials name={testimonial.name} overskrift={testimonial.overskrift} text={getFirstNChars(testimonial.text, 30) + "..."} link={"/testimonial/" + testimonial.id} />;
-          })
-        }
-      </ul>
-    </main>
-  </Mainlayout>
+  <Testimonials />
 
   <Line />
   <Delibillede />
