@@ -7,6 +7,13 @@ import Footer from "../komponenter/Footer.astro";
 import Header from "../komponenter/Header.astro";
 import Line from "../komponenter/Line.astro";
 import Knap from "../komponenter/Knap.astro";
+import Events from "../komponenter/Events.astro";
+import Tastings from "../komponenter/Tastings.astro";
+import Knowledge from "../komponenter/Knowledge.astro";
+import Deligoods from "../komponenter/Deligoods.astro";
+import Eventinfo from "../komponenter/Eventinfo.astro";
+import Tastinginfo from "../komponenter/Tastinginfo.astro";
+import Delibillede from "../komponenter/Delibillede.astro";
 ---
 
 <html lang="en">
@@ -24,28 +31,35 @@ import Knap from "../komponenter/Knap.astro";
   <Header />
   <body>
     <Backdrop />
-    <div>
-      <Knapper />
-    </div>
-	<Line />
-	<h2 class="h2_test">Test Your Knowledge!</h2>
-	<p class="p_test">How much do you actually know about natural wine?</p>
-	<Knap />
+    <main>
+      <div>
+        <Knapper />
+      </div>
+      <Line />
 
-    <Line />
-    <h2 class="deligoods">Deli Goods</h2>
+      <Knowledge />
 
-    <Carousel1 />
-	<Line />
-	<h2 class="h2_test">Events</h2>
+      <Knap />
 
-	<Line />
-	<h2 class="h2_test">Tastings</h2>
+      <Line />
 
-	<Line />
-    <center>
-      <img class="deli" src="../src/images/deli.webp" alt="" />
-    </center>
+      <Deligoods />
+
+      <Carousel1 />
+      <Line />
+
+      <Eventinfo />
+      <Events />
+
+      <Line />
+
+      <Tastinginfo />
+
+      <Tastings />
+
+      <Line />
+	  <Delibillede />
+    </main>
   </body>
   <Footer />
 </html>

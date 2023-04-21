@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="../src/styles/mutual.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet" />
+    <title>Astro</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="kalender">
+        <div class="grid">
+          <div class="plan">
+            <div class="dato">
+              <p class="month">APR</p>
+              <p class="day">21</p>
+            </div>
+
+            <div class="kasse">
+              <div class="time">
+                <div class="ur">
+                  <img src="../src/images/bookmark.svg" alt="" />
+                  <p>16:00 - 20:00</p>
+                </div>
+              </div>
+              <div class="event">
+                <p>Plat du Jour: Chicken Fricassée</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="hr1" />
+
+          <div class="plan">
+            <div class="dato">
+              <p class="month">MAY</p>
+              <p class="day1">5</p>
+            </div>
+            <div class="kasse">
+              <div class="time">
+                <div class="ur">
+                  <img src="../src/images/bookmark.svg" alt="" />
+                  <p>12:00 - 20:00</p>
+                </div>
+              </div>
+              <div class="event">
+                <p>Plat du Jour: Barbecue & wheat bread</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="link">
+        <a href="">View Calender</a>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  .dato {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20%;
+    padding-top: 30%;
+  }
+  .day {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 30px;
+    padding-left: 10px;
+    border-left: solid 2px #427bf2;
+  }
+
+  .day1 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 30px;
+    padding-left: 14px;
+    border-left: solid 2px #427bf2;
+  }
+
+  .month {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 13px;
+    padding-left: 10px;
+    border-left: solid 2px #427bf2;
+  }
+
+  .plan {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    margin-inline: 9%;
+  }
+
+  .time {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 13px;
+    padding-left: 10px;
+  }
+
+  .event {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 17x;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+  .hr1 {
+    margin-left: 15%;
+    margin-right: 65%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+    border: 0;
+    border-top: 1px solid #427bf2;
+  }
+
+  .kasse {
+    padding-left: 10%;
+  }
+
+  img {
+    width: 2.5%;
+    height: 2.5%;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .ur {
+    display: flex;
+    gap: 10px;
+  }
+
+  a {
+    color: #427bf2;
+    text-decoration: none;
+    margin-left: 9%;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .link {
+    padding-top: 5%;
+  }
+
+  .grid {
+    display: grid;
+    
+  }
+</style>
