@@ -34,33 +34,39 @@
     <header id="grid_menu">
       <nav id="header-nav">
         <ul id="menu">
-          <li class="wines">
-            <a href="" class="subnavbtn">WINES</a>
-          </li>
-          <li class="winemakers">
-            <a href="" class="subnavbtn">WINEMAKERS</a>
-          </li>
-          <li class="regions">
-            <a href="" class="subnavbtn">REGIONS</a>
-          </li>
-          <li class="subscription">
-            <a href="" class="subnavbtn">SUBSCRIPTION</a>
-          </li>
-          <li class="boxes">
-            <a href="" class="subnavbtn">BOXES</a>
-          </li>
-          <li class="social_club">
-            <a href="" class="subnavbtn">SOCIAL CLUB</a>
-          </li>
-          <li class="gift_card">
-            <a href="" class="subnavbtn">GIFT CARD</a>
-          </li>
-          <li class="deli">
-            <a href="" class="subnavbtn">DELI</a>
-          </li>
+          <div class="kategorier">
+            <li class="wines">
+              <a href="" class="subnavbtn">WINES</a>
+            </li>
+            <li class="winemakers">
+              <a href="" class="subnavbtn">WINEMAKERS</a>
+            </li>
+            <li class="regions">
+              <a href="" class="subnavbtn">REGIONS</a>
+            </li>
+            <li class="subscription">
+              <a href="" class="subnavbtn">SUBSCRIPTION</a>
+            </li>
+            <li class="boxes">
+              <a href="" class="subnavbtn">BOXES</a>
+            </li>
+            <li class="social_club">
+              <a href="" class="subnavbtn">SOCIAL CLUB</a>
+            </li>
+            <li class="gift_card">
+              <a href="" class="subnavbtn">GIFT CARD</a>
+            </li>
+            <li class="deli">
+              <a href="" class="subnavbtn">DELI</a>
+            </li>
+          </div>
           <li class="icons">
             <div class="icons">
-              <img class="search" src="src/images/Artboard 3.svg" alt="" /><a href=""></a>
+              <!-- <img class="search" src="src/images/Artboard 4.svg" alt="" /><a href=""></a> -->
+              <img class="search" src="src/images/search.webp" alt="" />
+              <img class="heart" src="src/images/heart.webp" alt="" />
+              <img class="person" src="src/images/person.webp" alt="" />
+              <img class="kurv" src="src/images/kurv.webp" alt="" />
             </div>
           </li>
         </ul>
@@ -114,7 +120,7 @@
     padding: 10px;
     padding-left: 10px;
     overflow: hidden;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-top: 40px;
   }
   /* header nav ul {
@@ -133,7 +139,7 @@
     color: #1c2d37;
     font-family: "Montserrat", sans-serif;
     padding: 10px;
-    font-size: 12px;
+    font-size: 11.5px;
     font-weight: 800;
     letter-spacing: 1px;
   }
@@ -144,8 +150,7 @@
 
   #menu {
     font-family: aviano-sans, sans-serif;
-    font-size: 14px;
-    font-weight: 800;
+    /* font-size: 8px; */
     letter-spacing: 1px;
     /* margin-left: 8.7%; */
   }
@@ -155,7 +160,31 @@
     grid-template-columns: 1fr 1fr; */
   }
 
+  .icons {
+    float: right;
+    margin-right: 10.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   .search {
-    width: 7%;
+    width: 50%;
+  }
+
+  .heart {
+    width: 50%;
+  }
+
+  .kurv {
+    width: 45%;
+  }
+
+  .person {
+    width: 50%;
+  }
+
+  .kategorier {
+    float: left;
+    margin-left: 39px;
+    font-family: aviano-sans, sans-serif;
   }
 </style>
