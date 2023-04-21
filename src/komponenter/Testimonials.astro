@@ -1,0 +1,31 @@
+---
+const { overskrift, name, text } = Astro.props;
+---
+
+<li class="testimonial">
+  <h2>{overskrift}</h2>
+  <h3>{name}</h3>
+  <p>{text}</p>
+</li>
+
+<style>
+  .testimonial {
+    margin-left: 7%;
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 13px;
+  }
+</style>
