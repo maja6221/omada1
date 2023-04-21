@@ -23,6 +23,11 @@
     <title>Header</title>
   </head>
   <body>
+    <div class="header_bar">
+      <div class="shipping">
+        <p>🇩🇰 Free shipping in Denmark over €150</p>
+      </div>
+    </div>
     <div class="logo">
       <a class="omada_logo" href="https://omada.wine/">OMADA.WINE</a>
     </div>
@@ -53,6 +58,11 @@
           <li class="deli">
             <a href="" class="subnavbtn">DELI</a>
           </li>
+          <li class="icons">
+            <div class="icons">
+              <img class="search" src="src/images/Artboard 3.svg" alt="" /><a href=""></a>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -61,14 +71,27 @@
 
 <style>
   * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
+
   img {
     width: 100%;
-    height: 100%;
-    display: block;
+    height: auto;
+    /* display: block; */
+  }
+
+  .shipping {
+    font-size: 13px;
+    margin-left: 1.5%;
+    color: white;
+  }
+
+  .header_bar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #2676f3;
   }
 
   .omada_logo {
@@ -124,12 +147,15 @@
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 1px;
-    margin-left: 8.7%;
+    /* margin-left: 8.7%; */
   }
 
   #grid_menu {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
-    /* align-items: center; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+  }
+
+  .search {
+    width: 7%;
   }
 </style>
