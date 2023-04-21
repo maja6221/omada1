@@ -9,6 +9,11 @@ import Line from "../komponenter/Line.astro";
 import Knap from "../komponenter/Knap.astro";
 import Events from "../komponenter/Events.astro";
 import Tastings from "../komponenter/Tastings.astro";
+import Knowledge from "../komponenter/Knowledge.astro";
+import Deligoods from "../komponenter/Deligoods.astro";
+import Eventinfo from "../komponenter/Eventinfo.astro";
+import Tastinginfo from "../komponenter/Tastinginfo.astro";
+import Delibillede from "../komponenter/Delibillede.astro";
 ---
 
 <html lang="en">
@@ -31,29 +36,29 @@ import Tastings from "../komponenter/Tastings.astro";
         <Knapper />
       </div>
       <Line />
-      <h2 class="h2_test">Test Your Knowledge!</h2>
-      <p class="p_test">How much do you actually know about natural wine?</p>
+
+      <Knowledge />
+
       <Knap />
 
       <Line />
-      <h2 class="deligoods">Deli Goods</h2>
+
+      <Deligoods />
 
       <Carousel1 />
       <Line />
-      <h2 class="h2_test">Events</h2>
-	  <p class="p_test">Upcoming:</p>
-	  <Events />
 
-
-      <Line />
-      <h2 class="h2_test">Tastings</h2>
-
-	  <Tastings />
+      <Eventinfo />
+      <Events />
 
       <Line />
-      <center>
-        <img class="deli" src="../src/images/deli.webp" alt="" />
-      </center>
+
+      <Tastinginfo />
+
+      <Tastings />
+
+      <Line />
+	  <Delibillede />
     </main>
   </body>
   <Footer />
