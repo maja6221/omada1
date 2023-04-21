@@ -1,30 +1,30 @@
-
-      <article>
-        <div class="openinghours">
-          <a href=""><h2 class="h2_test about">About</h2></a>
-          <button>About</button>
-          <p class="p1">Øster Farimagsgade 26</p>
-          <p class="p1">2100 København Ø</p>
-          <h2 class="h2_test1">Opening Hours</h2>
-          <p class="p1">Wednesdays 11-20</p>
-          <p class="p1">Thursdays 11-20</p>
-          <p class="p1">Fridays 11-20</p>
-          <p class="p1">Saturdays 11-20</p>
-          <p class="p1">Sundays 11-20</p>
-        </div>
-        <center>
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.8738355900828!2d12.573618676747726!3d55.69118119673584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b6ca64523b%3A0xdeeb88cddf88dfe5!2sOmada%20Wine%20%26%20Deli!5e0!3m2!1sda!2sdk!4v1682067479049!5m2!1sda!2sdk"
-            width="600"
-            height="450"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </center>
-      </article>
+<article>
+  <div class="openinghours">
+    <div class="knap">
+      <button>About</button>
+    </div>
+    <p class="p1">Øster Farimagsgade 26</p>
+    <p class="p1">2100 København Ø</p>
+    <h2 class="h2_test1">Opening Hours</h2>
+    <p class="p1">Wednesdays 11-20</p>
+    <p class="p1">Thursdays 11-20</p>
+    <p class="p1">Fridays 11-20</p>
+    <p class="p1">Saturdays 11-20</p>
+    <p class="p1">Sundays 11-20</p>
+  </div>
+  <center>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.8738355900828!2d12.573618676747726!3d55.69118119673584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b6ca64523b%3A0xdeeb88cddf88dfe5!2sOmada%20Wine%20%26%20Deli!5e0!3m2!1sda!2sdk!4v1682067479049!5m2!1sda!2sdk"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </center>
+</article>
 
 <style>
   .p1 {
@@ -32,22 +32,20 @@
     font-size: 15px;
     color: rgba(0, 0, 0, 0.5);
     padding-left: 11%;
+    
   }
 
   .h2_test1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: #e5604d;
     padding-left: 11%;
+    padding-top: 40px;
   }
 
-  .about:hover {
-    text-decoration: underline 2px;
-    color: #e5614db5;
-  }
-
-  a {
-    text-decoration: none;
+  button:hover {
+    color: #fffef3;
+    background-color: #e5604d;
   }
 
   .openinghours {
@@ -59,21 +57,25 @@
   }
 
   .map {
-   padding-right: 140px;
-    }
+    padding-right: 140px;
+  }
 
-    button {
+  button {
     border: solid #e5604d;
     color: #e5604d;
     background-color: #fffef3;
-    font-size: 30px ;
-    padding: 10px;
-    width: 20%;
+    font-size: 30px;
+    padding: 15px;
+    width: 30%;
     background-color: none;
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-left: 11%;
+  }
+
+  .knap {
+    padding-bottom: 10%;
   }
   @media (max-width: 600px) {
     article {
@@ -84,10 +86,23 @@
       padding-left: 1%;
     }
 
-    iframe{
+    iframe {
       width: 80%;
       height: 100%;
-      
     }
+
+     button {
+    border: solid #e5604d;
+    color: #e5604d;
+    background-color: #fffef3;
+    font-size: 30px;
+    padding: 15px;
+    width: 30%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 11%;
+  }
   }
 </style>
