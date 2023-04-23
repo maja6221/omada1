@@ -1,5 +1,33 @@
+---
+import Animation from "./Animation.astro";
+---
 
+<div class="div1">
+  <div>
+    <h2 class="h2_test ">Test Your Knowledge!</h2>
+    <p class="p_test">How much do you actually know about natural wine?</p>
+  </div>
+  <div class="animation">
+    <Animation />
+  </div>
+</div>
+
+<style>
+  .div1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+  }
+
+  .animation {
+      padding-left: 10%;
+  }
   
-      <h2 class="h2_test">Test Your Knowledge!</h2>
-      <p class="p_test">How much do you actually know about natural wine?</p>
-  
+
+  @media (max-width: 600px) {
+      .div1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  } 
+  }
+</style>
