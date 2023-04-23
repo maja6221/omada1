@@ -42,9 +42,8 @@ const udsagn = await response.json();
 <Burgermenu />
 <Backdrop />
 <main>
-  <div>
-    <Knapper />
-  </div>
+  <Knapper />
+
   <Line />
 
   <Knowledge />
@@ -75,14 +74,15 @@ const udsagn = await response.json();
 
   <Mainlayout title="Reviews">
     <main>
-      <Form />
-      <ul>
+      <ul class="ul">
         {
           udsagn.map((testimonial) => {
             return <Testimonials name={testimonial.name} overskrift={testimonial.overskrift} age={testimonial.age} text={testimonial.text} />;
           })
         }
       </ul>
+
+      <Form />
     </main>
   </Mainlayout>
 
