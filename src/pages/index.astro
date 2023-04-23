@@ -17,7 +17,6 @@ import Delibillede from "../komponenter/Delibillede.astro";
 import Opening from "../komponenter/Opening.astro";
 import Burgermenu from "../komponenter/Burgermenu.astro";
 
-
 import "../styles/mutual.css";
 
 import Mainlayout from "../komponenter/Mainlayout.astro";
@@ -37,10 +36,6 @@ const response = await fetch(url, {
 });
 
 const udsagn = await response.json();
-
-function getFirstNChars(str, length) {
-  return str.substring(0, length);
-}
 ---
 
 <Header />
@@ -84,14 +79,12 @@ function getFirstNChars(str, length) {
       <ul>
         {
           udsagn.map((testimonial) => {
-            return <Testimonials name={testimonial.name} overskrift={testimonial.overskrift} text={getFirstNChars(testimonial.text, 30) + "..."} link={"/testimonial/" + testimonial.id} />;
+            return <Testimonials name={testimonial.name} overskrift={testimonial.overskrift} age={testimonial.age} text={testimonial.text} />;
           })
         }
       </ul>
     </main>
   </Mainlayout>
-
-
 
   <Line />
   <Delibillede />
