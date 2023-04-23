@@ -1,35 +1,22 @@
 ---
 ---
 
+<div class="knap">
 
-    
-    <div class="knap">
-      <button>Event Calendar</button>
-      <button>Tastings</button>
-      <button>Deli Goods</button>
-      <button>About</button>
-    </div>
-
+    <button class="knap1">Event Calendar</button>
+    <button class="knap2">Tastings</button>
+    <button class="knap3">Deli Goods</button>
+    <button class="knap4">About</button>
+ 
+</div>
 
 <style>
-  @media (max-width: 600px) {
-    .knap {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-
-  
-
-
-    }
-  }
-
   button {
     border: solid #e5604d;
     color: #e5604d;
     background-color: #fffef3;
     padding: 15px;
-    width: 50%;
+    width: 100%;
     background-color: none;
     display: flex;
     justify-content: center;
@@ -38,10 +25,11 @@
 
   .knap {
     gap: 30px;
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
     text-align: center;
-    padding-inline: 30px;
+    padding-inline: 50px;
     padding-top: 50px;
   }
 
@@ -55,5 +43,25 @@
   button:hover {
     color: #fffef3;
     background-color: #e5604d;
+  }
+
+  @media (max-width: 600px) {
+    .knap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+  
+    }
+
+    .knap3 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .knap4 {
+      grid-column: 2;
+      grid-row: 2;
+    }
   }
 </style>

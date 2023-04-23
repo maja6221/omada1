@@ -43,8 +43,8 @@
             <li class="nav-item">
               <a href="" class="nav-link">GIFT CARD</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">DELI</a>
+            <li class="deli">
+              <a href="" class="subnavbtn" id="deli">DELI</a>
             </li>
           </div>
           <li class="icons">
@@ -71,6 +71,14 @@
         box-sizing: border-box;
       }
 
+      #deli {
+        color: #e5604d;
+      }
+
+      #deli:hover {
+        color: black;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -95,7 +103,15 @@
         margin-left: 40.5%;
       }
 
-      ul.nav-menu li {
+      @media (max-width: 600px) {
+        .omada_logo {
+          color: black;
+          font-size: 30px;
+          margin-left: 30.5%;
+        }
+      }
+
+      ul#menu li {
         display: inline;
       }
 
