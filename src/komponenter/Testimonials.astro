@@ -2,33 +2,52 @@
 const { overskrift, age, name, text } = Astro.props;
 ---
 
-<li class="testimonial">
-  <h2>{overskrift}</h2>
-  <h3>{name}</h3>
-  <h3>{age}</h3>
-  <p>{text}</p>
-</li>
+<div class="grid">
+  <center>
+    <li class="testimonial">
+      <h2 class="overskrift">{overskrift}</h2>
+      <p>{text}</p>
+      <h3>{name}, {age}</h3>
+    </li>
+  </center>
+</div>
 
 <style>
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+  
+  }
+
+  li {
+    list-style: none;
+    border: solid 1px #e5604d;
+   padding-bottom: 50px;
+  
+    
+  }
   .testimonial {
     margin-left: 6.8%;
     padding-top: 10px;
     font-family: "Montserrat", sans-serif;
   }
 
-  h2 {
+  .overskrift {
     font-size: 18px;
-    font-weight: normal;
-    padding-top: 24px;
+    font-weight: bold;
+    color: #e5604d;
+    padding-top: 40px;
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
   }
 
   p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media (max-width: 600px) {
