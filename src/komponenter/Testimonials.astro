@@ -17,15 +17,19 @@ const { overskrift, age, name, text } = Astro.props;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
-  
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 
   li {
     list-style: none;
     border: solid 1px #e5604d;
-   padding-bottom: 50px;
-  
-    
+    padding-bottom: 50px;
   }
   .testimonial {
     margin-left: 6.8%;
