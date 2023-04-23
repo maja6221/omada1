@@ -19,32 +19,32 @@
       <a class="omada_logo" href="https://omada.wine/">OMADA.WINE</a>
     </div>
     <header id="grid_menu">
-      <nav id="header-nav">
-        <ul id="menu">
+      <nav class="navbar">
+        <ul class="nav-menu">
           <div class="kategorier">
-            <li class="wines">
-              <a href="" class="subnavbtn">WINES</a>
+            <li class="nav-item">
+              <a href="" class="nav-link">WINES</a>
             </li>
-            <li class="winemakers">
-              <a href="" class="subnavbtn">WINEMAKERS</a>
+            <li class="nav-item">
+              <a href="" class="nav-link">WINEMAKERS</a>
             </li>
-            <li class="regions">
-              <a href="" class="subnavbtn">REGIONS</a>
+            <li class="nav-item">
+              <a href="" class="nav-link">REGIONS</a>
             </li>
-            <li class="subscription">
-              <a href="" class="subnavbtn">SUBSCRIPTION</a>
+            <li class="nav-item">
+              <a href="" class="nav-link">SUBSCRIPTION</a>
             </li>
-            <li class="boxes">
-              <a href="" class="subnavbtn">BOXES</a>
+            <li class="nav-item">
+              <a href="" class="nav-link">BOXES</a>
             </li>
-            <li class="social_club">
-              <a href="" class="subnavbtn">SOCIAL CLUB</a>
+            <li class="nav-item">
+              <a href="" class="nav-link">SOCIAL CLUB</a>
             </li>
-            <li class="gift_card">
-              <a href="" class="subnavbtn">GIFT CARD</a>
+            <li class="nav-item">
+              <a href="" class="nav-link">GIFT CARD</a>
             </li>
-            <li class="deli">
-              <a href="" class="subnavbtn">DELI</a>
+            <li class="nav-item">
+              <a href="" class="nav-link">DELI</a>
             </li>
           </div>
           <li class="icons">
@@ -56,6 +56,11 @@
             </div>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
@@ -90,7 +95,7 @@
         margin-left: 40.5%;
       }
 
-      ul#menu li {
+      ul.nav-menu li {
         display: inline;
       }
 
@@ -106,15 +111,6 @@
         padding-bottom: 20px;
         padding-top: 25px;
       }
-      /* header nav ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 5px;
-    gap: 35px;
-    overflow-x: auto;
-  } */
 
       a {
         text-decoration: none;
@@ -131,9 +127,13 @@
         color: #e5604d;
       }
 
-      #menu {
+      .nav-menu {
         font-family: aviano-sans, sans-serif;
         letter-spacing: 1px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
       }
 
       .icons {
