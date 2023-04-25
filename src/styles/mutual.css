@@ -5,6 +5,22 @@
 }
 
 
+.testimonials {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+@media (max-width: 600px) {
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        
+        }
+}
+
+
 .deli{
     width: 70%;
 
