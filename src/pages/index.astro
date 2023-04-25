@@ -72,15 +72,16 @@ const udsagn = await response.json();
 
   <Line />
 
+  
   <Mainlayout title="Reviews">
     <main>
-      <ul class="ul">
+      <section class="testimonials">
         {
           udsagn.map((testimonial) => {
             return <Testimonials name={testimonial.name} overskrift={testimonial.overskrift} age={testimonial.age} text={testimonial.text} />;
           })
         }
-      </ul>
+      </section>
 
       <Form />
     </main>
