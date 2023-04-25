@@ -2,24 +2,18 @@
 const { overskrift, age, name, text } = Astro.props;
 ---
 
-
-  <article class="testimonial-container">
-    
-        <div class="border">
-          <h2 class="overskrift">{overskrift}</h2>
-          <p>{text}</p>
-          <h3>{name}, {age}</h3>
-        </div>
-             
-  </article>
-
+<article class="testimonial-container">
+  <div class="border">
+    <h2 class="overskrift">{overskrift}</h2>
+    <p>{text}</p>
+    <h3>{name}, {age}</h3>
+  </div>
+</article>
 
 <style>
-
   .testimonial-container {
     text-align: center;
     padding-bottom: 10%;
-
   }
 
   .border {
@@ -29,39 +23,29 @@ const { overskrift, age, name, text } = Astro.props;
   }
 
   @media (max-width: 600px) {
-  
   }
-
-
-  
 
   @media (max-width: 600px) {
-    
   }
-
- 
-  /* .testimonial {
-    margin-left: 6.8%;
-    padding-top: 10px;
-    font-family: "Montserrat", sans-serif;
-    padding-inline: 20px;
-  } */
 
   .overskrift {
     font-size: 18px;
     font-weight: bold;
     color: #e5604d;
     padding-top: 40px;
+    font-family: "Montserrat", sans-serif;
   }
 
   h3 {
     font-size: 13px;
     font-weight: normal;
     color: rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat", sans-serif;
   }
 
   p {
-    font-size: 15px;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
   }
 
   @media (max-width: 600px) {

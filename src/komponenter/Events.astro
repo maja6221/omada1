@@ -1,50 +1,49 @@
+<section class="kalender">
+  <div class="grid">
+    <div class="plan">
+      <div class="dato">
+        <p class="month">APR</p>
+        <p class="day">21</p>
+      </div>
 
-      <section class="kalender">
-        <div class="grid">
-          <div class="plan">
-            <div class="dato">
-              <p class="month">APR</p>
-              <p class="day">21</p>
-            </div>
-
-            <div class="kasse">
-              <div class="time">
-                <div class="ur">
-                  <img src="./images/bookmark.svg" alt="" />
-                  <p>16:00 - 20:00</p>
-                </div>
-              </div>
-              <div class="event">
-                <p class="p1">Plat du Jour: Chicken Fricassée</p>
-              </div>
-            </div>
-          </div>
-
-          <hr class="hr1" />
-
-          <div class="plan">
-            <div class="dato">
-              <p class="month">MAY</p>
-              <p class="day1">5</p>
-            </div>
-            <div class="kasse">
-              <div class="time">
-                <div class="ur">
-                  <img src="./images/bookmark.svg" alt="" />
-                  <p>12:00 - 20:00</p>
-                </div>
-              </div>
-              <div class="event">
-                <p class="p1">Plat du Jour: Barbecue & wheat bread</p>
-              </div>
-            </div>
+      <div class="kasse">
+        <div class="time">
+          <div class="ur">
+            <img src="./images/bookmark.svg" alt="" />
+            <p>16:00 - 20:00</p>
           </div>
         </div>
-      </section>
-      <div class="link">
-        <a href="">View Calender</a>
+        <div class="event">
+          <p class="p1">Plat du Jour: Chicken Fricassée</p>
+        </div>
       </div>
-   
+    </div>
+
+    <hr class="hr1" />
+
+    <div class="plan">
+      <div class="dato">
+        <p class="month">MAY</p>
+        <p class="day1">5</p>
+      </div>
+      <div class="kasse">
+        <div class="time">
+          <div class="ur">
+            <img src="./images/bookmark.svg" alt="" />
+            <p>12:00 - 20:00</p>
+          </div>
+        </div>
+        <div class="event">
+          <p class="p1">Plat du Jour: Barbecue & wheat bread</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="link">
+  <a href="">View Calender</a>
+</div>
+
 <style>
   .dato {
     display: flex;
@@ -79,7 +78,7 @@
   .plan {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
-    margin-inline: 9%;
+    margin-inline: 10%;
   }
 
   .time {
@@ -141,8 +140,6 @@
   .grid {
     display: grid;
     padding-left: 2%;
-    
-    
   }
 
   .p1:hover {
