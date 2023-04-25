@@ -1,0 +1,213 @@
+<!-- <button id="burger-menu">
+  <span></span>
+</button>
+<div class="hide">
+  <div class="logo">
+    <a class="omada_logo" href="https://omada.wine/">OMADA.WINE</a>
+  </div>
+  <nav id="menu">
+    <ul class="nav-menu kategorier">
+      <li class="nav-item">
+        <a href="" class="nav-link">WINES</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">WINEMAKERS</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">REGIONS</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">SUBSCRIPTION</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">BOXES</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">SOCIAL CLUB</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">GIFT CARD</a>
+      </li>
+      <li class="deli">
+        <a href="" class="nav-link" id="deli">DELI</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<style>
+  @media screen and (min-width: 1000px) {
+    .hide {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .omada_logo {
+      color: black;
+      font-size: 20px;
+      margin-left: 6%;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+    }
+    #burger-menu {
+      text-indent: -9999px;
+      display: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      height: 100px;
+      width: 27px;
+      position: relative;
+      z-index: 2;
+      margin: auto;
+      max-width: 480px;
+    }
+
+    #burger-menu {
+      display: block;
+      float: right;
+      left: -20px;
+      top: 20px;
+    }
+
+    #burger-menu span,
+    #burger-menu span:before,
+    #burger-menu span:after {
+      background-color: #e5604d;
+      display: block;
+      height: 3px;
+      opacity: 1;
+      position: absolute;
+      transition: 0.3 ease-in-out;
+      content: "";
+    }
+    #burger-menu span:before {
+      left: 0px;
+      top: -10px;
+      width: 27px;
+    }
+
+    #burger-menu span {
+      right: 0px;
+      top: 13px;
+      width: 27px;
+    }
+
+    #burger-menu span:after {
+      left: 0px;
+      top: 13px;
+      width: 27px;
+    }
+
+    #burger-menu.close span:before {
+      top: 0px;
+      transform: rotate(90deg);
+      width: 27px;
+      background-color: antiquewhite;
+    }
+
+    #burger-menu.close span {
+      transform: rotate(-45deg);
+      top: 13px;
+      width: 27px;
+      background-color: rgb(238, 242, 242);
+    }
+
+    #burger-menu.close span:after {
+      top: 0;
+      left: 0;
+      transform: rotate(90deg);
+      opacity: 0;
+      width: 0;
+      background-color: aliceblue;
+    }
+    #menu {
+      z-index: 1;
+      min-width: 100%;
+      min-height: 100%;
+      position: fixed;
+      top: 0;
+      height: 0;
+      text-align: center;
+      padding-top: 20px;
+      transition: all 0.3 ease-in-out;
+    }
+
+    /* #menu.overlay {
+      visibility: visible;
+      opacity: 2;
+      padding-top: 100px;
+      background-color: black;
+    } */
+
+    #menu ul {
+      padding: 0;
+    }
+
+    #menu li {
+      list-style: none;
+      display: initial;
+    }
+    #menu a {
+      color: #e5604d;
+      display: block;
+      font-size: 15px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .toggle-btn {
+      background: transparent;
+      border: none;
+      display: block;
+      height: 44px;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 23px;
+      font-family: "quicksand";
+      color: white;
+    }
+
+    .toggle-btn:hover {
+      color: #156b4c;
+    }
+
+    nav {
+      display: none;
+    }
+
+    nav.shown {
+      border-top: 1px solid #fdfdfd;
+      padding-top: 1rem;
+      display: flex;
+      flex-flow: column;
+    }
+
+    nav ul {
+      display: flex;
+      flex-flow: column;
+    }
+
+    .logo {
+      width: 60%;
+    }
+  }
+</style>
+
+<script>
+  const burgerMenu = document.querySelector("#burger-menu");
+  const menu = document.querySelector("#menu");
+
+  burgerMenu.addEventListener("click", function () {
+    burgerMenu.classList.toggle("close");
+    menu.classList.toggle("overlay");
+  });
+</script> -->

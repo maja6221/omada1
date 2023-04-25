@@ -19,34 +19,32 @@
       <a class="omada_logo" href="https://omada.wine/">OMADA.WINE</a>
     </div>
     <header id="grid_menu">
-      <nav class="navbar">
-        <ul class="nav-menu">
-          <div class="kategorier">
-            <li class="nav-item">
-              <a href="" class="nav-link">WINES</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">WINEMAKERS</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">REGIONS</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">SUBSCRIPTION</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">BOXES</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">SOCIAL CLUB</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">GIFT CARD</a>
-            </li>
-            <li class="deli">
-              <a href="" class="nav-link" id="deli">DELI</a>
-            </li>
-          </div>
+      <nav id="menu">
+        <ul class="nav-menu kategorier">
+          <li class="nav-item">
+            <a href="" class="nav-link">WINES</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">WINEMAKERS</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">REGIONS</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">SUBSCRIPTION</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">BOXES</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">SOCIAL CLUB</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">GIFT CARD</a>
+          </li>
+          <li class="deli">
+            <a href="" class="nav-link" id="deli">DELI</a>
+          </li>
           <li class="icons">
             <div class="icons">
               <img class="search" src="./images/search.webp" alt="" />
@@ -56,11 +54,6 @@
             </div>
           </li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </nav>
     </header>
 
@@ -87,7 +80,7 @@
 
       .shipping {
         font-size: 13px;
-        margin-left: 4%;
+        margin-left: 5.3%;
         color: white;
       }
 
@@ -136,7 +129,7 @@
       }
 
       .nav-menu {
-        font-family: aviano-sans, sans-serif;
+        font-family: "Montserrat", sans-serif;
         letter-spacing: 1px;
         gap: 60px;
       }
@@ -164,16 +157,31 @@
       }
 
       .kategorier {
-        float: left;
-        margin-left: 39px;
-        font-family: aviano-sans, sans-serif;
+        margin-left: 4.2%;
+        margin-right: 1.5%;
+        font-family: "Montserrat", sans-serif;
       }
 
       @media (max-width: 600px) {
         .omada_logo {
           color: black;
-          font-size: 30px;
-          margin-left: 30.5%;
+          font-size: 15px;
+          margin-left: 12%;
+        }
+
+        .icons {
+          display: none;
+        }
+
+        .header_bar {
+          display: none;
+        }
+
+        .kategorier {
+          margin-left: 7.5%;
+          font-family: "Montserrat", sans-serif;
+          padding: 10px;
+          padding-top: 4px;
         }
       }
     </style>
